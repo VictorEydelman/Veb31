@@ -1,0 +1,38 @@
+<html xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Title</title>
+    <h:outputStylesheet  name="f1/startpage.css"/>
+</h:head>
+<h:body>
+    <header>
+        Эйдельман Виктор Аркадьевич, группа P3214, вариант № 2461
+    </header>
+    <div id="mainBlock">
+        <div id="day"></div>
+        <div id="time"></div>
+        <h:button outcome="app" id="toMain"  value="Перейти на основную страницу"/>
+    </div>
+    <script >
+        window.onload= function (){
+            clock();
+        }
+        function clock() {
+            let date = new Date();
+            let Day = date.getDate();
+            let Mouth = date.getMonth()+1;
+            let Year = date.getFullYear();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            if (10 > hours) hours = "0" + hours;
+            if (10 > minutes) minutes = "0" + minutes;
+            if (10 > seconds) seconds = "0" + seconds;
+            document.getElementById("day").innerHTML = Day + "." + Mouth + "." + Year;
+            document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+            setTimeout("clock()", 12000);
+        }
+    </script>
+</h:body>
+
+</html>
