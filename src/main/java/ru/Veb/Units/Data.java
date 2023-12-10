@@ -16,20 +16,14 @@ public class Data implements Serializable {
         simple = new SimpleDateFormat("HH:mm:ss");
     }
 
-    public List<Dataon> getRez(String session) throws IOException, ClassNotFoundException, SQLException {
+    public List<Dataon> getRez() throws IOException, ClassNotFoundException, SQLException {
         DB db = new DB();
-        rez=db.getReports(session);
-        if(rez.size()>0) {
-            System.out.println(rez + " getRez ");
-        }
+        rez=db.getReports();
         return rez;
     }
 
     public void setRez(List<Dataon> rez) {
-        //for (int i=0;i<rez.size();i++){
-          //  System.out.print(rez.get(i).getX()+" ");
-        //}
-        System.out.println(rez+" setRez");
+
         this.rez=rez;
     }
     public void addEntry(Dataon entry) {

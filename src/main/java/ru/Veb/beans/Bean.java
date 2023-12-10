@@ -4,10 +4,11 @@ import ru.Veb.DB;
 import ru.Veb.Units.Data;
 import ru.Veb.Units.Dataon;
 
-import javax.faces.context.FacesContext;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 import static java.lang.Math.pow;
 
@@ -15,8 +16,7 @@ public class Bean {
     private Dataon entries=new Dataon(0,0,0,0,"1",new Date());
     private String dots = "";
     Data data = new Data();
-    String sessionId = FacesContext.getCurrentInstance().getExternalContext().getSessionId(true);
-    public List<Dataon> d = data.getRez(sessionId);
+    public List<Dataon> d = data.getRez();
 
     public Bean() throws IOException, SQLException, ClassNotFoundException {
     }
@@ -28,11 +28,9 @@ public class Bean {
         this.dots = dots;
     }
     public void setD(List<Dataon> d){
-        System.out.println(d+" setD");
         this.d=d;
     }
     public List<Dataon> getD() {
-        System.out.println(d + " getD");
         return d;
     }
     public void add() throws IOException {

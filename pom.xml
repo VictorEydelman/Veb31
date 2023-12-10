@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ru.aaaTurbo</groupId>
+  <groupId>ru.Veb</groupId>
   <artifactId>Veb3</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
@@ -27,12 +27,6 @@
       <version>2.2.20</version>
     </dependency>
 
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>jstl</artifactId>
-      <version>1.2</version>
-    </dependency>
-
     <!--  PSQL  -->
 
     <dependency>
@@ -41,13 +35,6 @@
       <version>42.6.0</version>
     </dependency>
 
-    <!--  HIBERNATE -->
-
-    <dependency>
-      <groupId>org.teiid</groupId>
-      <artifactId>teiid-hibernate-dialect</artifactId>
-      <version>16.0.0</version>
-    </dependency>
 
 
     <dependency>
@@ -82,7 +69,6 @@
       <version>3.0.0</version>
     </dependency>
 
-
     <!-- PSQL -->
 
     <!--  PSQL  -->
@@ -93,25 +79,7 @@
       <version>42.6.0</version>
     </dependency>
 
-    <!--  HIBERNATE -->
 
-    <dependency>
-      <groupId>org.teiid</groupId>
-      <artifactId>teiid-hibernate-dialect</artifactId>
-      <version>16.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.hibernate.orm</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>6.2.3.Final</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.hibernate.javax.persistence</groupId>
-      <artifactId>hibernate-jpa-2.1-api</artifactId>
-      <version>1.0.2.Final</version>
-    </dependency>
 
 
 
@@ -140,7 +108,12 @@
       <scope>provided</scope>
     </dependency>
 
-
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
     <!-- PSQL -->
 
     <dependency>

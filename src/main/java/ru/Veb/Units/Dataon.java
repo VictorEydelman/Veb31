@@ -1,10 +1,10 @@
 package ru.Veb.Units;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
-
-import jakarta.persistence.*;
 
 @Entity
 public class Dataon implements Serializable {
