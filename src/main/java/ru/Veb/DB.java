@@ -29,7 +29,6 @@ public class DB implements Serializable {
         return true;
     }
 
-    private static final String p="def";
     public List<Dataon> getReports() throws IOException {
             transaction.begin();
             Query query=em.createQuery("SELECT e from Dataon e");

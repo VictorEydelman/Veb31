@@ -62,12 +62,12 @@
     </dependency>
 
     <!--  JAKARTA -->
-
+<!--
     <dependency>
-      <groupId>jakarta.persistence</groupId>
-      <artifactId>jakarta.persistence-api</artifactId>
-      <version>3.0.0</version>
-    </dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+    </dependency>-->
 
     <!-- PSQL -->
 
@@ -100,13 +100,24 @@
     </dependency>
 
     <!--  JAKARTA -->
+    <!--<dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>8.0.1</version>
+      <scope>provided</scope>
+    </dependency>
 
     <dependency>
-      <groupId>jakarta.platform</groupId>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>8.0.1</version>
+    </dependency>-->
+    <!--<dependency>
+      <groupId>javax.platform</groupId>
       <artifactId>jakarta.jakartaee-web-api</artifactId>
       <version>9.1.0</version>
       <scope>provided</scope>
-    </dependency>
+    </dependency>-->
 
     <dependency>
       <groupId>jakarta.servlet</groupId>
