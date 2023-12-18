@@ -13,7 +13,7 @@ import java.util.List;
 import static java.lang.Math.pow;
 
 public class Bean {
-    private Dataon entries=new Dataon(0,0,0,0,"1",new Date());
+    private Dataon entries=new Dataon(0,0,0,1,"1",new Date());
     private String dots = "";
     Data data = new Data();
     public List<Dataon> d = data.getRez();
@@ -43,7 +43,7 @@ public class Bean {
             dots += "<circle cx=\"" + (((ent.getX() * 80) / ent.getR()) + 140)
                     + "\" cy=\"" + (-1 * ((ent.getY() * 80) / ent.getR()) + 140) + "\" r=\"3\" fill=\"red\"/>";
         }
-        entries = new Dataon(0,0,0,0,"1",new Date());
+        entries = new Dataon(0,0,0,1,"1",new Date());
         d.add(ent);
         DB db = new DB();
         db.save(ent);
